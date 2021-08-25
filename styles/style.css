@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+:root{
+    --primary: #008D7A;
+    --secondary: #f1f1f0;
+}
+h1{
+
+}
+h2{
+    border-left: 4px solid var(--primary);
+    padding: .2rem .4rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: .2rem;
+}
+html{
+    /* font-size: 65.2%; */
+}
+section{
+    margin: 4rem auto;
+}
+.fade-in{
+    background: #2c3e50 !important;
+}
+/* ------------------------------------------------------------ */
+.background{
+    background:rgba(0, 0, 0, .9) url(../images//bg1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    transition: all ease .3s;
+}
+.navbar .navbar-brand{
+    font-weight: bolder;
+    /* color: var(--primary); */
+    color: white;
+}
+.dropdown-menu{
+background: rgba(0, 0, 0, .8)
+}
+.dropdown-menu .dropdown-item:hover{
+    background: rgba(0, 0, 0, .9) !important
+
+}
+.navbar{
+    display: flex ;
+    /* background: var(--secondary); */
+    align-items: center;
+    justify-content: center ;
+    background: rgba(0, 0, 0, .3)
+}
+.navbar-nav li{
+    list-style: none;
+
+}
+.navbar-nav li a{
+    text-decoration: none;
+    color: white !important;
+    font-weight: 400;
+}
+.navbar form input{
+
+}
+.navbar form .btn{
+    border: 1px solid var(--primary);
+    background-color: var(--primary);
+    /* padding: .1rem 3rem; */
+    color: white;
+}
+
+
+/* =================================== */
+.home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.box_main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* color: white; */
+    /* background-color: teal; */
+    background: var(--secondary);
+    height: 50vh;
+    width: 100%;
+    padding: 1rem 2rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: .3rem;
+
+}
+.box_main h1{
+    /* color: white; */
+    color: var(--primary);
+    font-weight: 600;
+}
+.box_main img{
+    width: 60%
+
+}
+.box_main button{
+    background: #636e72;
+    color: white;
+}
+.first_half{
+    /* background: yellow; */
+
+}
+.second_half{
+    /* background: green; */
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+}
+
+/* --------------ABOUT--------------------- */
+
+.about{
+    height: 90vh;
+   
+}
