@@ -44,6 +44,7 @@ section{
     font-weight: bolder;
     /* color: var(--primary); */
     color: white;
+    letter-spacing: .2rem;
 }
 .dropdown-menu{
 background: rgba(0, 0, 0, .8)
