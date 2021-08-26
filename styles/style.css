@@ -8,6 +8,14 @@
 :root{
     --primary: #008D7A;
     --secondary: #f1f1f0;
+    --light-font: #636e72;
+}
+section{
+    margin: 3rem auto;
+}
+.card{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
 }
 h1{
 
@@ -22,9 +30,7 @@ h2{
 html{
     /* font-size: 65.2%; */
 }
-section{
-    margin: 4rem auto;
-}
+
 .fade-in{
     background: #2c3e50 !important;
 }
@@ -141,7 +147,7 @@ background: rgba(0, 0, 0, .8)
 /* --------------ABOUT--------------------- */
 
 .about{
-    height: 90vh;
+
    
 }
 
@@ -171,6 +177,49 @@ background: rgba(0, 0, 0, .8)
 .team{
 
 }
-.time .card img{
+.team p{
+    color: var(--light-font);
+
+} 
+.team .card img{
   object-fit: contain;
+}
+.team .card h4{
+    margin: 1rem auto;
+}
+.about .about_details p{
+    margin-top: 2rem;
+}
+.about .about_details img{
+    width: 20rem;
+}
+
+/* ------------------------------------------------ */
+.targets{
+    padding: 2rem;
+    background-color: #e8f6f7;
+}
+.targets h3{
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    border-bottom: 1px solid var(--primary);
+    display:inline-block;
+    font-weight: 600;
+}
+.targets .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+.targets .box i{
+    font-size: 2.3rem;
+    color: var(--primary);
+}
+.targets .box h1{
+    margin: 1rem auto;
+}
+.targets .box p{
+    color: var(--light-font);
 }
