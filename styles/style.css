@@ -9,6 +9,7 @@
     --primary: #008D7A;
     --secondary: #f1f1f0;
     --light-font: #636e72;
+    --dark:#2c3e50;
 }
 section{
     margin: 3rem auto;
@@ -16,6 +17,9 @@ section{
 .card{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
+}
+li{
+    list-style: none;
 }
 h1{
 
@@ -32,7 +36,7 @@ html{
 }
 
 .fade-in{
-    background: #2c3e50 !important;
+    background: var(--dark) !important;
 }
 /* ------------------------------------------------------------ */
 .background{
@@ -181,8 +185,15 @@ background: rgba(0, 0, 0, .8)
     color: var(--light-font);
 
 } 
+.team .card{
+    width: 100%;
+    height: 100%;
+    padding: .3rem 1rem;
+}
 .team .card img{
   object-fit: contain;
+  width: 80%;
+  margin: auto;
 }
 .team .card h4{
     margin: 1rem auto;
@@ -222,4 +233,40 @@ background: rgba(0, 0, 0, .8)
 }
 .targets .box p{
     color: var(--light-font);
+}
+
+
+/* --------------------CONTACT------------------- */
+.contact{
+    background: var(--dark);
+    color: white;
+    margin: 0 !important;
+}
+.contact .contact_form{
+    margin-top: 4rem;
+}
+.contact h2{
+    border: none;
+}
+.contact hr{
+    background-color: var(--light-font);
+}
+.contact .submit-btn{
+    border: 1px solid #979797;
+    padding: .3rem 6rem;
+    color: #979797;
+}
+.contact .address i{
+  margin-right: .3rem;
+}
+.contact .social_links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.8rem;
+}
+.contact .social_links li a{
+    list-style-type: none;
+    color: white;
+
 }
