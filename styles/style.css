@@ -166,3 +166,11 @@ background: rgba(0, 0, 0, .8)
 .services .card h5{
     margin: 1rem auto;
 }
+
+/* ---------------------team------------- */
+.team{
+
+}
+.time .card img{
+  object-fit: contain;
+}
