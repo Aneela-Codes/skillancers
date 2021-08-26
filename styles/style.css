@@ -39,6 +39,7 @@ section{
     position: fixed;
     width: 100%;
     transition: all ease .3s;
+    z-index: 99
 }
 .navbar .navbar-brand{
     font-weight: bolder;
@@ -86,6 +87,9 @@ background: rgba(0, 0, 0, .8)
     display: flex;
     align-items: center;
 }
+.home .row{
+    padding: 0;
+}
 .box_main{
     display: flex;
     justify-content: space-between;
@@ -105,24 +109,33 @@ background: rgba(0, 0, 0, .8)
     color: var(--primary);
     font-weight: 600;
 }
-.box_main img{
-    width: 60%
 
-}
 .box_main button{
     background: #636e72;
     color: white;
 }
 .first_half{
     /* background: yellow; */
+    display: flex;
+    justify-content:center;
+    /* align-items: center; */
+    flex-direction: column;
 
+
+}
+.first_half .text_big{
+    font-size: 210%;
 }
 .second_half{
     /* background: green; */
     display: flex;
     justify-content:center;
     align-items: center;
+    height: 100%;
 
+}
+.second_half img{
+    width: 20rem;
 }
 
 /* --------------ABOUT--------------------- */
@@ -130,4 +143,26 @@ background: rgba(0, 0, 0, .8)
 .about{
     height: 90vh;
    
+}
+
+/* ---------------services----------------- */
+.services{
+
+}
+.services h2{
+    margin: 3rem auto;
+}
+.services .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .4rem .6rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+.services .card img{
+    width: 4rem;
+}
+.services .card h5{
+    margin: 1rem auto;
 }
