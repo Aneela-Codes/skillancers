@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+
 :root{
     --primary: #008D7A;
     --secondary: #f1f1f0;
@@ -17,6 +18,9 @@ section{
 .card{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
+}
+p{
+    color: var(--light-font);
 }
 li{
     list-style: none;
@@ -107,7 +111,7 @@ background: rgba(0, 0, 0, .8)
     /* color: white; */
     /* background-color: teal; */
     background: var(--secondary);
-    height: 50vh;
+    /* height: 50vh; */
     width: 100%;
     padding: 1rem 2rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -145,20 +149,13 @@ background: rgba(0, 0, 0, .8)
 
 }
 .second_half img{
-    width: 20rem;
+    width: 15rem;
 }
 
 /* --------------ABOUT--------------------- */
 
-.about{
-
-   
-}
-
 /* ---------------services----------------- */
-.services{
 
-}
 .services h2{
     margin: 3rem auto;
 }
@@ -178,9 +175,7 @@ background: rgba(0, 0, 0, .8)
 }
 
 /* ---------------------team------------- */
-.team{
 
-}
 .team p{
     color: var(--light-font);
 

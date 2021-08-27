@@ -1,0 +1,14 @@
+
+.programs{
+    height: 100vh;
+    display: flex;
+}
+.programs .row{
+    padding: 0;
+}
+.programs .about_details p{
+    margin-top: 2rem;
+}
+.programs .about_details img{
+    width: 20rem;
+}
