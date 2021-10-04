@@ -16,9 +16,7 @@
     --dark:#2c3e50;
     --bgColor: #7f8c8d;
 }
-section{
-    margin: 3rem auto;
-}
+
 /* .card{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
@@ -55,6 +53,7 @@ h2{
 }
 html{
     /* font-size: 65.2%; */
+    scroll-behavior: smooth;
 }
 
 .fade-in{
@@ -147,14 +146,18 @@ background: rgba(0, 0, 0, .8)
     list-style: none;
 
 }
+.navbar-nav li.active a{
+    color: var(--primary) !important;
+}
 .navbar-nav li a{
     text-decoration: none;
     /* color: white !important; */
-    font-weight: 500;
+    font-weight: 600;
     text-transform: uppercase;
     font-size: .85rem;
     letter-spacing: 1px;
     font-family: 'Raleway', sans-serif;
+    transition: color ease .3s;
 }
 .navbar form input{
 
@@ -249,6 +252,14 @@ background: rgba(0, 0, 0, .8)
 .services h2{
     margin-top: 7rem ;
     margin-bottom: 3rem;
+    position: relative;
+}
+.services h2::before{
+    position: absolute;
+    content: 'How can we help?';
+    color: var(--primary);
+    font-size: .9rem;
+    top: -2rem;
 }
 
 .services .row{

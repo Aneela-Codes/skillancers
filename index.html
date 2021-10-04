@@ -11,12 +11,13 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Skillancer - Transforming skills to business</title>
   </head>
   <body>
-    <div class="background">
+    <section class="background homeID " id="homeID">
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
           <a class="navbar-brand text-uppercase" href="#">Skillancers</a>
@@ -36,16 +37,16 @@
             id="navbarSupportedContent"
           >
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#home"
+              <li class="nav-item homeID ">
+                <a class="nav-link" aria-current="page" href="#homeID"
                   >Home</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
+              <li class="nav-item aboutID ">
+                <a class="nav-link" href="#aboutID">About</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#services">Services</a>
+              <li class="nav-item servicesID">
+                <a class="nav-link" href="#servicesID">Services</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./pages/programs.html" target="_blank">programs</a>
@@ -70,8 +71,8 @@
                   </li>
                 </ul>
               </li> -->
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+              <li class="nav-item contactID">
+                <a class="nav-link" href="#contactID">Contact</a>
               </li>
             </ul>
             <!-- <form class="d-flex mx-3">
@@ -88,8 +89,8 @@
       </nav>
       <!-- ---------------------------------------ABOUT----------------------- -->
 
-      <div class="home" id="home">
-        <div class="box_main container">
+      <div class="home ">
+        <div class="box_main container " data-aos="zoom-in-up">
 
           <div class="row">
             <div class="col-lg-8 col-md-8 col-12 ">
@@ -118,19 +119,19 @@
         </div>
       </div>
 
-    </div>
+    </section>
 
-    <section class="about">
-      <div class="container" id="about">
+    <section class="about aboutID" id="aboutID">
+      <div class="container" >
         <h2>get to know us</h2>
 
         <div class="row about_details">
-          <div class="col-lg-8 col-md-8 col-12">
+          <div class="col-lg-8 col-md-8 col-12 " data-aos="zoom-in-up">
             <p>At Skillancers, we develop innovative and creative products and services that provide total communication and information solutions. Among a plethora of services, web design and development, tailor made applications, ERPs, CRMs, e-commerce solutions, business-to-business applications, business-to-client applications, managed hosting and internet portal management are few that we offer. Satisfied clients around the globe bear testimony to the quality of our w</p>
             <p>Our emphasis is on offering a high degree of product user friendliness through a positive, creative and focused company staff</p>
           </div>
           <div class="col-lg-4 col-md-4 d-none d-lg-block d-md-block ">
-            <div >
+            <div data-aos="fade-left" >
             <img src="./images/office.svg" alt="office-logo" class="ig-fluid">
 
             </div>
@@ -142,7 +143,7 @@
       <div class="container text-center team">
         <p>Our Amazing Team</p>
         <h3 class="">Meet the people who make it happen</h3>
-        <div class="row my-5 ">
+        <div class="row my-5 " data-aos="fade-up">
           <div class="col-lg-3 col-md-3 col-12 my-3">
             <div class="card">
               <!-- <img src="./images/avatar1.png" alt="" /> -->
@@ -256,7 +257,7 @@
       </div>
     </section>
     
-    <section class="targets">
+    <section class="targets" data-aos="fade-right">
       <div class="container text-center">
       <h3>Our Targets Achieved</h3>
         <div class="row">
@@ -292,8 +293,8 @@
       </div>
     </section>
 
-    <section class="services ">
-      <div class="container" id="services">
+    <section class="services servicesID " data-aos="fade-right" id="servicesID">
+      <div class="container" >
         <h2>our services</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus consequatur error quos minima sed ut ea nobis fugiat cupiditate reprehenderit.</p>
         <div class="row text-center ">
@@ -353,7 +354,7 @@
 
    
 
-    <div class="contact">
+    <section class="contact contactID" id="contactID">
       <div class="container ">
         <h2 class="text-center">Contact</h2>
         <hr> 
@@ -407,7 +408,9 @@
 
         </div>
       </div>
-    </div>
+    </section>
+
+
     <script src="./scripts/script.js"></script>
 
     <script
@@ -415,6 +418,10 @@
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
       crossorigin="anonymous">
     
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>

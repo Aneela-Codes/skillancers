@@ -1,7 +1,9 @@
 
 .programs{
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
+    margin: 8rem auto;
+    padding: 8rem 4rem;
 }
 .programs .row{
     padding: 0;
@@ -18,8 +20,12 @@
     align-items: center;
     padding:1rem  ;
     text-align: center;
-    /* background: yellow; */
+    background: var(--secondary);
     position: relative;
+    transition: all ease-in-out .3s;
+    height: 100%;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;    border: none;
+
 }
 .programs .internship .details-btn{
     position: absolute;
@@ -52,17 +58,22 @@
 .programs .internship img{
     width: 10rem;
     height: 100%;
+    margin: 1rem auto;
 }
 
-/* ----------------------------- */
+/* ------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------*/
+
 .internship_container{
     background: var(--secondary);
     width: 100%;
-    padding: 1rem 2rem;
+    padding: 4rem 2rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: .3rem;
     position: relative;
     /* height: 50%; */
+    margin-top: 7rem;
+    z-index: 9;
 }
 .internship_container .tabContainer{
     position: relative;
